@@ -185,3 +185,71 @@ p {
 .container .banner .main-slider .flex-direction-nav a.flex-next:before {
   content: '\f002';
 }
+.container .category-best-products-section {
+  margin-top: -10px;
+}
+.container .category-best-products-section .category-best-products {
+  display: block;
+}
+.container .category-best-products-section .category-best-products .category {
+  display: inline-block;
+  width: 22.23%;
+}
+.container .category-best-products-section .category-best-products .category .panel {
+  box-shadow: 18px 20px 25px #ededed;
+  text-align: left;
+  padding-right: 15px;
+}
+.container .category-best-products-section .category-best-products .category .panel .panel-heading {
+  padding: 10px 0px;
+}
+.container .category-best-products-section .category-best-products .category .panel .panel-heading .glyphicon {
+  margin-right: 10px;
+  color: #13aef2;
+  font-size: 18px;
+}
+.container .category-best-products-section .category-best-products .category .panel .panel-heading strong {
+  font-size: 18px;
+  color: #5e5d5d;
+}
+.container .category-best-products-section .category-best-products .category .panel .panel-heading .see-all {
+  color: #13aef2;
+  margin-right: 0px;
+  font-size: 13px;
+}
+.container .category-best-products-section .category-best-products .category .panel .panel-body {
+  padding: 0px;
+}
+.container .category-best-products-section .category-best-products .category .panel .panel-body .list-group {
+  margin-bottom: 0px;
+}
+.container .category-best-products-section .category-best-products .category .panel .panel-body .list-group .list-group-item {
+  border: 0px;
+  border-top: 1px solid #ddd;
+  padding-left: 0px;
+  padding-right: 0px;
+  color: #5e5d5d;
+}
+.container .category-best-products-section .category-best-products .category .panel .panel-body .list-group .list-group-item .glyphicon {
+  width: 40px;
+}
+.container .category-best-products-section .category-best-products .category .panel .panel-body .list-group .list-group-item:first-child {
+  border: 0px;
+  border-radius: 0px;
+  border-top: 3px solid #13aef2;
+}
+.container .category-best-products-section .category-best-products .category .panel .panel-body .list-group .list-group-item:hover {
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.container .category-best-products-section .category-best-products .best-products {
+  display: inline-block;
+  width: 18.2%;
+  vertical-align: top;
+  border: 1px solid red;
+}
+@media (min-width: 1900px) {
+  .container {
+    width: 1548px;
+  }
+}
