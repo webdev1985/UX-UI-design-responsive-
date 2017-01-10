@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="test">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="plugins/flexslider/flexslider.css" rel="stylesheet" media="screen" />
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+<body>
+
+	<div id="wrapper">
+		<div class="container">
+			<!-- start header -->
+			<header>
+				<div class="top">
+					<div class="row">
+						<ul class="topleft-info">
+							<li><a href="#">Help Center </a></li>
+							<li><a href="#">Contact Us </a></li>
+						</ul>
+					
+						<ul class="topleft-info btn-login-join pull-right" >
+							<li class="btn-login"><a href="#">Login</a></li>
+							<li ><a class="btn btn-warning btn-join">Join Now</a></li>
+						</ul>
+					
+						<ul class="topleft-info pull-right">
+							<li><a href="#">Buying Requests</a></li>
+							<li><a href="#">Start Selling</a></li>
+							<li><a href="#">Start Buying</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="search">
+					<div class="row">
+						<div class="col-md-9">
+				            <div class="input-group" id="adv-search">
+				            	<div class="input-group-btn">
+				                    <div class="btn-group" role="group">
+				                          <div class="dropdown">
+										    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Products
+										    	<i class="fa fa-angle-down" aria-hidden="true"></i>
+										    </button>
+										    <ul class="dropdown-menu">
+										      <li><a href="#">Normal</a></li>
+										      <li><a href="#">Disabled</a></li>
+										      <li><a href="#">Active</a></li>
+										      <li><a href="#">Normal</a></li>
+										    </ul>
+										  </div>
+				                    </div>
+				                </div>
+				                <input type="text" class="form-control" placeholder="What are you looking for ?" />
+				                <div class="input-group-btn">
+				                    <div class="btn-group" role="group">
+				                        <button type="button" class="btn"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Search</button>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="col-md-3" >
+				        	<a href="#" class="btn btn-default pull-left request-product"><img src="./images/tap-button.png" width="20" height="20">&nbsp;&nbsp;Request Product</a>
+				        </div>
+					</div>
+				</div>	   
+			</header>
+			<!-- end header -->
+
+			<!---banner start ---->
+			<section class="banner">
+				<!-- Slider -->
+		        <div id="main-slider" class="main-slider flexslider">
+		            <ul class="slides">
+		              <li>
+		                <img src="images/slides/flexslider/1.png" height="180" alt="" />
+		                <a href="#" class="btn btn-default  buy-product">Buy Now</a>
+		              </li>
+		              <li>
+		                <img src="images/slides/flexslider/2.jpg"  height="180" alt="" />
+		                <a href="#" class="btn btn-default  buy-product">Buy Now</a>
+		              </li>
+		              <li>
+		                <img src="images/slides/flexslider/3.jpg"  height="180" alt="" />
+		                <a href="#" class="btn btn-default  buy-product">Buy Now</a>
+		              </li>
+		              <li>
+		                <img src="images/slides/flexslider/3.jpg"  height="180" alt="" />
+		                <a href="#" class="btn btn-default  buy-product">Buy Now</a>
+		              </li>
+		              <li>
+		                <img src="images/slides/flexslider/3.jpg"  height="180" alt="" />
+		                <a href="#" class="btn btn-default buy-product">Buy Now</a>
+		              </li>
+		            </ul>
+		        </div>
+				<!-- end slider -->
+			</section>
+			<!---banner end---->
+			<section class="category-best-products">
+					<div class="col-md-3" style="border:1px solid red;height: 300px;">
+						
+					</div>				
+					<div class="col-md-3" style="border:1px solid red;height: 300px;">
+						
+					</div>				
+					<div class="col-md-3" style="border:1px solid red;height: 300px;">
+						
+					</div>				
+					<div class="col-md-3" style="border:1px solid red;height: 300px;">
+						
+					</div>	
+			</section>
+		</div>
+	</div> 
+</body>
+<script src="plugins/flexslider/jquery.flexslider-min.js"></script> 
+<script src="plugins/flexslider/flexslider.config.js"></script>
+</html>

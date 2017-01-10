@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../fonts/SourceSansPro-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../fonts/SourceSansPro-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../fonts/SourceSansPro-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../fonts/SourceSansPro-Semibold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../fonts/SourceSansPro-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Semibold.ttf');
+  font-weight: 500;
+}
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  font-weight: 300;
+  font-family: "OpenSans Semibold";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  line-height: 1;
+  font-weight: 300;
+}
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.container header .top {
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 5px solid #13aef2;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: left 70%;
+}
+.container header .top .row {
+  margin-bottom: 0;
+  height: 37px;
+  padding-left: 140px;
+}
+.container header .top ul.topleft-info {
+  list-style: none;
+  float: left;
+  font-size: 12px;
+}
+.container header .top ul.topleft-info li {
+  display: inline-block;
+  margin: 20px 20px 0 0;
+  padding: 0;
+  font-weight: 300;
+}
+.container header .top ul.topleft-info li a {
+  color: #414141;
+}
+.container header .top ul.topleft-info li a:hover {
+  text-decoration: none;
+  outline: 0;
+}
+.container header .top ul.topleft-info .btn-login a {
+  color: #13aef2;
+}
+.container header .top ul.topleft-info .btn-join {
+  padding: 10px;
+  with: 100px;
+  height: 26px;
+  border-radius: 13px;
+  color: white;
+  font-size: 12px;
+  line-height: 0.5;
+}
+.container header .search {
+  padding: 18px 0 0 77px;
+  margin: 0;
+}
+.container header .search .btn-group .btn:last-child {
+  padding-left: 40px;
+  padding-right: 40px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #13aef2;
+  color: white;
+}
+.container header .search .btn-group .dropdown .btn {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.container header .search .request-product {
+  background: transparent;
+  border-radius: 1px;
+  border-color: #13aef2;
+}
+.container .banner .main-slider.flexslider {
+  margin: 40px 0 50px;
+  background: transparent;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+.container .banner .main-slider.flexslider .slides li {
+  position: relative;
+}
+.container .banner .main-slider.flexslider .slides li a {
+  position: absolute;
+  bottom: 5%;
+  left: 47%;
+  padding: 10px;
+  with: 100px;
+  height: 26px;
+  border-radius: 13px;
+  color: #13aef2;
+  font-size: 12px;
+  line-height: 0.5;
+}
+.container .banner .main-slider .flex-cation {
+  background: none;
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, 0, endColorstr=#4C000000, 0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, 0, endColorstr=#4C000000, 0);
+  zoom: 1;
+  bottom: 35px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  margin: 0;
+  padding: 25px 25px 25px 30px;
+  position: absolute;
+  right: 0;
+  width: 295px;
+}
+.container .banner .main-slider .flex-cation h3 {
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.container .banner .main-slider .flex-cation p {
+  margin: 0 0 15px;
+}
+.container .banner .main-slider .flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f001';
+}
+.container .banner .main-slider .flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
