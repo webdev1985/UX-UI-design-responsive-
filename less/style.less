@@ -7,20 +7,21 @@
 @color-yellow: #ff9600;
 
 @main-font: "OpenSans Semibold";
-@main-title-font: "OpenSans Bold";
+@main-title-font: "OpenSans-Bold";
 @main-font-color: #4d4d50;
 
 @product-price-font:"HelveticalNeueLT MediumCond";
 
-@content-color: #ddd;
-@main-font-size: 12px;
+@main-border-color:#ddd;
+@content-color: #8e8d8d;
+@main-font-size: 14px;
 
 html, body {
     height: 100%;
     background-color: #fff;
     font-weight: 300;
     //font-family: "SourceSansPro", sans-serif;
-    font-family: @main-font;
+    font-family: @main-title-font;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -36,12 +37,12 @@ h1, h2, h3, h4, h5, h6, p {
 	// header section start --------------------
 	header{
 		.top{
-			padding:15px 0;
+			padding:17px 0;
 			margin:0;
 			border-bottom: 5px solid @color-blue;
 			background-image: url(../images/logo.png);
 			background-repeat: no-repeat;
-			background-position: left 70%;
+			background-position: left 65%;
 
 
 			.row{
@@ -59,7 +60,6 @@ h1, h2, h3, h4, h5, h6, p {
 					margin:20px 20px 0 0;
 					padding:0;
 					font-weight: 300;
-
 
 					a {
 						color: #414141;
@@ -90,8 +90,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 		.search{
 
-			padding:18px 0 0 77px;
+			padding:24px 0 0 100px;
 			margin:0;
+
 
 			.btn-group{
 				.btn:last-child{
@@ -251,7 +252,7 @@ h1, h2, h3, h4, h5, h6, p {
 					 		.list-group-item{
 					 			
 					 			border:0px;
-					 			border-top:1px solid #ddd;
+					 			border-top:1px solid @main-border-color;
 					 			padding:15px 15px;
 					 			color:#5e5d5d;
 					 			.glyphicon{
@@ -325,7 +326,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 						.product-info{
 							width:100%;
-							border:1px solid @content-color;
+							border:1px solid @main-border-color;
 							padding:20px;
 							
 							.product-rating{
@@ -350,6 +351,7 @@ h1, h2, h3, h4, h5, h6, p {
 									width: 100%;
 									margin-top:25px;
 									margin-bottom: 25px;
+									color: @content-color;
 
 									.price{
 
@@ -383,6 +385,7 @@ h1, h2, h3, h4, h5, h6, p {
 								.order {
 									width: 100%;
 									text-align: left;
+									color: @content-color;
 
 									i{
 										color:#5cb23b;
@@ -394,22 +397,18 @@ h1, h2, h3, h4, h5, h6, p {
 									width: 100%;
 									margin-top: 15px;
 									text-align: left;
+									color: @content-color;
 								}
 
 							}
-							@media only screen and (min-width: 1400px) and (max-width: 1900px){
-								.product-image{
-									img{
 
-										width:100%;
-										
-									}
 
-								}
+						}
+						.product-info:hover{
 
-								
-							}
-
+							border:1px solid @color-blue;
+							box-shadow: 0px 0px 5px @color-blue;
+							cursor: pointer;
 						}
 						
 					}
@@ -422,112 +421,404 @@ h1, h2, h3, h4, h5, h6, p {
 	// <!---category & Best selling products section end------>
 	// <!---Recently Viewed Products start---->
 
+	.recently-viewed-products{
+
+		font-family: @main-title-font;
+
+		.recently-products-heading{
+			width: 100%;
+			padding:10px 0 10px 0;
+			font-weight: bold;
+			color: @main-font-color;
+			font-size: 19px;
+			text-align: left;
+			border-bottom: 3px solid @color-blue;
+
+			.glyphicon{
+
+					width:40px;
+					img{
+						width: 22px;
+						height: 100%;
+					}
+				}
+
+			a{
+				color: @color-blue;
+ 				margin-right: 0px;
+ 				font-size: 13px;
+			}
+		}
+		.recently-products-wrap{
+
+			padding:35px 0;
+
+			.product{
+
+				padding-right: 8px;
+				padding-left: 8px;
+				
+				.product-info{
+					
+					width:100%;
+					border:1px solid @main-border-color;
+					padding:20px;
+
+					.product-image{
+						margin-top: 30px;
+						width: 100%;
+					}
+					.detail-info{
+
+
+						p{
+							margin-top: 45px;
+							line-height: 20px;
+						}
+						.price-info{
+							display: table;
+							width: 100%;
+							margin-top:8px;
+							margin-bottom: 10px;
+
+							.price{
+
+								
+								display: table-cell;
+								text-align: left;
+								font-size: 20px;
+								width: auto;
+							}
+							.per-item{
+								width:20%;
+								display: table-cell;
+								text-align: left;
+								color: @content-color;
+								
+							}
+
+							.pre-price{
+								display: table-cell;
+								width: 40%;
+								text-align: left;
+								vertical-align: middle;
+								text-decoration: line-through;
+								color: @content-color;
+
+							}
+
+							.sale{
+								display: table-cell;
+								text-align: right;
+								vertical-align: middle;
+
+
+								.sale-info{
+									width:66px;
+									height: 27px;
+									border-radius: 13px;
+									padding:1px 6px;	
+									color:white;
+									font-size: 14px;
+									font-weight: bold;
+								}
+							}
+							
+						}
+
+						.order {
+							width: 100%;
+							text-align: left;
+							color: @content-color;
+
+							i{
+								color:#5cb23b;
+							}
+						}
+
+						.stock {
+
+							width: 100%;
+							margin-top: 5px;
+							text-align: left;
+							color: @content-color;
+						}
+
+					}
+
+				}
+
+				.product-info:hover{
+
+					border:1px solid @color-blue;
+					box-shadow: 0px 0px 5px @color-blue;
+					cursor: pointer;
+				}
+			}
+
+
+		}
+	}
+
+	// <!---Recently Viewed Products end---->
+	// <!--- Bulk Deals & Clearane Deals ----->
+	.bulk-clearance{
+
+		.bulk-deals-wrap{
+
+			padding-left: 0px;
+			padding-right: 8px;
+
+			.bulk-deals{
+				width: 100%;
+				border:1px solid @color-blue;
+			}
+		}
+
+		.clearance-deals-wrap{
+
+			padding-left: 8px;
+			padding-right: 0px;		
+			.clearance-deals{
+				width: 100%;
+				border:1px solid @color-blue;
+			}
+
+		}
+
+	}
+
+	@media only screen and (min-width: 1400px) and (max-width: 1900px){
+
+		header{
+
+			.search{
+
+				padding:18px 0 0 75px;
+				margin:0;
+
+			}
+		}
+		.banner{
+			.main-slider.flexslider{
+
+					margin: 15px 0 25px; 
+			}
+	
+		}
+
+		.category-best-products-section{
+
+			.category-best-products{
+				
+				.category{
+
+					.panel{
+
+						padding-right:12px;
+						
+			 			.panel-heading{
+
+			 				padding: 8px 0px;
+
+			 				.glyphicon{
+
+				 				margin-right:8px;
+				 				font-size: 14px;
+				 				
+			 				}
+
+			 				strong{
+				 					
+				 					font-size: 14px;
+				 				}
+
+			 			}
+						.panel-body {
+							
+						 	.list-group {
+						 		
+						 		font-size: 12px;
+						 		.list-group-item{
+						 			
+						 			padding:11px 0px;
+						 			.glyphicon{
+
+						 				width: 30px;
+					 				}
+
+						 		}
+						 	}
+						}
+
+					}
+				}
+
+				.best-products{
+
+					.best-products-heading{
+
+						width: 100%;
+						padding:8px 0 8px 0;
+						font-size: 15px;
+
+						.glyphicon{
+
+							width:26px;
+						}
+
+					}
+
+					.product-wrap{
+
+						margin-top:22px;
+
+						.product{
+							padding-left: 6px;
+							padding-right: 6px;
+
+							.product-info{
+								
+								padding:8px;
+
+								.product-image{
+
+									margin-top: 35px;
+									img{
+
+										width: 100%;
+									}
+								}
+
+								.detail-info{
+
+									p{
+										margin-top: 30px;
+										font-size: 12px;
+										line-height: 18px;
+									}
+									.price-info{
+										margin-top: 18px;
+										margin-bottom: 18px;
+
+										.price{
+
+											font-size: 18px;
+										}
+										.sale{
+
+											.sale-info{
+
+												width:52px;
+												height: 20px;
+												border-radius: 10px;
+												padding:0px 4px;	
+												font-size: 12px;
+											}
+										}
+									}
+
+									.per-item{
+
+										font-size:10px;
+										font-style: italic;
+									}
+
+									.order{
+										font-size: 10px;
+									}
+
+									.stock {
+
+										margin-top: 5px;
+										font-size: 10px;
+									}
+
+								}
+
+
+							}
+							
+						}
+					}
+
+				}
+			}
+		}
+
+		// <!---Recently Viewed Products start---->
+
 		.recently-viewed-products{
 
 			.recently-products-heading{
-				width: 100%;
-				padding:10px 0 10px 0;
-				font-weight: bold;
-				color: @main-font-color;
-				font-size: 19px;
-				text-align: left;
-				border-bottom: 3px solid @color-blue;
+				padding:7.5px 0 7.5px 0;
+				font-size: 14px;
 
 				.glyphicon{
 
-						width:40px;
+						width:30px;
 					}
 
-				a{
-					color: @color-blue;
-	 				margin-right: 0px;
-	 				font-size: 13px;
-				}
 			}
 			.recently-products-wrap{
 
-				padding:35px 0;
+				padding:26px 0;
 
 				.product{
 
-					padding-right: 8px;
-					padding-left: 8px;
+					padding-right: 6px;
+					padding-left: 6px;
 					
 					.product-info{
 						
-						width:100%;
-						border:1px solid @content-color;
-						padding:20px;
+						padding:9px;
 
 						.product-image{
-							margin-top: 30px;
-							width: 100%;
+							margin-top: 22px;
+
 						}
 						.detail-info{
 
 							p{
-								margin-top: 45px;
+								margin-top: 25px;
+								line-height: 15px;
+								font-size: 10px;
 							}
 							.price-info{
-								display: table;
-								width: 100%;
-								margin-top:12px;
-								margin-bottom: 16px;
+
+								margin-top:6px;
+								margin-bottom: 7.5px;
 
 								.price{
-
-									width:55%;
-									display: table-cell;
-									text-align: left;
-									font-size: 20px;
-									font-family: @product-price-font;
-								}
-								.per-item{
-									width:20%;
-									display: table-cell;
 									
-								}
-
-								.pre-price{
-									display: table-cell;
-									width: 55%;
-									text-align: left;
-									vertical-align: middle;
-
+									font-size: 15px;
 								}
 
 								.sale{
-									display: table-cell;
-									text-align: right;
-									vertical-align: middle;
 
 									.sale-info{
-										width:66px;
-										height: 27px;
-										border-radius: 13px;
-										padding:1px 6px;	
-										color:white;
-										font-size: 14px;
-										font-weight: bold;
+										width:50px;
+										height: 20px;
+										border-radius: 10px;
+										padding:1px 4px;	
+										font-size: 10px;
 									}
 								}
 								
 							}
+							.per-item{
+								font-size: 10px;
+								font-style: italic;
+							}
 
-							.order {
-								width: 100%;
-								text-align: left;
-
-								i{
-									color:#5cb23b;
-								}
+							.order{
+								font-size: 10px;
 							}
 
 							.stock {
 
-								width: 100%;
-								margin-top: 15px;
-								text-align: left;
+								margin-top: 4px;
+								font-size: 10px;
 							}
 
 						}
@@ -539,7 +830,30 @@ h1, h2, h3, h4, h5, h6, p {
 			}
 		}
 
-	// <!---Recently Viewed Products start---->
+		// <!---Recently Viewed Products end---->
+		// <!--- Bulk Deals & Clearane Deals ----->
+		.bulk-clearance{
+
+			.bulk-deals-wrap{
+
+				padding-right: 6px;
+
+				.bulk-deals{
+
+				}
+			}
+
+			.clearance-deals-wrap{
+
+				padding-left: 6px;
+				.clearance-deals{
+					
+				}
+
+			}
+
+		}
+	}
 
 }
 @media (min-width: 1900px) {
