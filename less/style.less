@@ -5,9 +5,13 @@
 @screen-tablet: 1200px;
 @color-blue: #13aef2;
 @color-yellow: #ff9600;
+
 @main-font: "OpenSans Semibold";
 @main-title-font: "OpenSans Bold";
 @main-font-color: #4d4d50;
+
+@product-price-font:"HelveticalNeueLT MediumCond";
+
 @content-color: #ddd;
 @main-font-size: 12px;
 
@@ -248,8 +252,7 @@ h1, h2, h3, h4, h5, h6, p {
 					 			
 					 			border:0px;
 					 			border-top:1px solid #ddd;
-					 			padding-left:0px;
-					 			padding-right: 0px;
+					 			padding:15px 15px;
 					 			color:#5e5d5d;
 					 			.glyphicon{
 
@@ -292,6 +295,17 @@ h1, h2, h3, h4, h5, h6, p {
 					font-size: 19px;
 					text-align: left;
 					border-bottom: 3px solid @color-blue;
+
+					.glyphicon{
+
+						width:35px;
+					}
+
+					a{
+						color: @color-blue;
+		 				margin-right: 0px;
+		 				font-size: 13px;
+					}
 				}
 
 				.product-wrap{
@@ -322,7 +336,7 @@ h1, h2, h3, h4, h5, h6, p {
 							}
 
 							.product-image{
-								margin-top: 40px;
+								margin-top: 30px;
 								width: 100%;
 							}
 
@@ -339,23 +353,19 @@ h1, h2, h3, h4, h5, h6, p {
 
 									.price{
 
-										width:35%;
+										width:55%;
 										display: table-cell;
 										font-size: 24px;
 										color:@color-blue;
-										border:1px solid red;
 									}
 									.per-item{
 										width:20%;
 										display: table-cell;
 										
-										border:1px solid red;
 									}
 									.sale{
-										display: 40%;
 										display: table-cell;
 										vertical-align: middle;
-										border:1px solid red;
 
 										.sale-info{
 
@@ -369,16 +379,37 @@ h1, h2, h3, h4, h5, h6, p {
 										}
 									}
 								}
+
+								.order {
+									width: 100%;
+									text-align: left;
+
+									i{
+										color:#5cb23b;
+									}
+								}
+
+								.stock {
+
+									width: 100%;
+									margin-top: 15px;
+									text-align: left;
+								}
+
 							}
 							@media only screen and (min-width: 1400px) and (max-width: 1900px){
 								.product-image{
 									img{
 
-										width:153px;
-										height: 104px;
+										width:100%;
+										
 									}
+
 								}
+
+								
 							}
+
 						}
 						
 					}
@@ -387,6 +418,129 @@ h1, h2, h3, h4, h5, h6, p {
 			}
 		}
 	}
+
+	// <!---category & Best selling products section end------>
+	// <!---Recently Viewed Products start---->
+
+		.recently-viewed-products{
+
+			.recently-products-heading{
+				width: 100%;
+				padding:10px 0 10px 0;
+				font-weight: bold;
+				color: @main-font-color;
+				font-size: 19px;
+				text-align: left;
+				border-bottom: 3px solid @color-blue;
+
+				.glyphicon{
+
+						width:40px;
+					}
+
+				a{
+					color: @color-blue;
+	 				margin-right: 0px;
+	 				font-size: 13px;
+				}
+			}
+			.recently-products-wrap{
+
+				padding:35px 0;
+
+				.product{
+
+					padding-right: 8px;
+					padding-left: 8px;
+					
+					.product-info{
+						
+						width:100%;
+						border:1px solid @content-color;
+						padding:20px;
+
+						.product-image{
+							margin-top: 30px;
+							width: 100%;
+						}
+						.detail-info{
+
+							p{
+								margin-top: 45px;
+							}
+							.price-info{
+								display: table;
+								width: 100%;
+								margin-top:12px;
+								margin-bottom: 16px;
+
+								.price{
+
+									width:55%;
+									display: table-cell;
+									text-align: left;
+									font-size: 20px;
+									font-family: @product-price-font;
+								}
+								.per-item{
+									width:20%;
+									display: table-cell;
+									
+								}
+
+								.pre-price{
+									display: table-cell;
+									width: 55%;
+									text-align: left;
+									vertical-align: middle;
+
+								}
+
+								.sale{
+									display: table-cell;
+									text-align: right;
+									vertical-align: middle;
+
+									.sale-info{
+										width:66px;
+										height: 27px;
+										border-radius: 13px;
+										padding:1px 6px;	
+										color:white;
+										font-size: 14px;
+										font-weight: bold;
+									}
+								}
+								
+							}
+
+							.order {
+								width: 100%;
+								text-align: left;
+
+								i{
+									color:#5cb23b;
+								}
+							}
+
+							.stock {
+
+								width: 100%;
+								margin-top: 15px;
+								text-align: left;
+							}
+
+						}
+
+					}
+				}
+
+
+			}
+		}
+
+	// <!---Recently Viewed Products start---->
+
 }
 @media (min-width: 1900px) {
   .container {
