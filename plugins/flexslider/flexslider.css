@@ -78,9 +78,9 @@ html[xmlns] .slides {display: block;}
 .flex-pauseplay a.flex-play:before { content: '\f003'; }
 
 /* Control Nav */
-.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
-.flex-control-nav li {margin: 0 10px; display: inline-block; zoom: 1; *display: inline;}
-.flex-control-paging li a {width: 11px; height: 11px; display: block; -ms-transform: rotate(45deg);-webkit-transform: rotate(45deg);transform: rotate(45deg); border:1px solid #cbcbcc; cursor: pointer; text-indent: -9999px;-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
+.flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
+.flex-control-nav li {margin: 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 6px; height: 6px; display: block; -ms-transform: rotate(45deg);-webkit-transform: rotate(45deg);transform: rotate(45deg); border:1px solid #cbcbcc; cursor: pointer; text-indent: -9999px;-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
 .flex-control-paging li a:hover { background: #13aef2;border:1px solid #cbcbcc; }
 .flex-control-paging li a.flex-active { background: #13aefe;  cursor: default;border:1px solid #cbcbcc; }
 
