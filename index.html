@@ -1,1326 +1,1449 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="test">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="plugins/flexslider/flexslider.css" rel="stylesheet" media="screen" /> 
-    <link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/fontstyle.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+ 
+
+
+
 </head>
 <body>
-<div class="container">
-    <div class="header">
-        <div class="row logo">
-            <img src="images/Logo.PNG">
+<header>
+	<nav class="navbar  navbar-static-top">
+      <div class="container navbar_css">
+        <div class=" col-md-2 col-xs-12">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand nav_logo " href="#"><img src="assets/img/new_logo.png"></a>
         </div>
-        <div class="row padding-left-right">
-            <div class="col-sm-12 nav-bar">
-                <div class="row">
-                    <ul class="topleft-info">
-                        <li><a href="#">Help Center </a></li>
-                        <li><a href="#">Contact Us </a></li>
-                    </ul>
-                
-                    <ul class="topleft-info btn-login-join pull-right" >
-                        <li class="btn-login"><a href="#">Login</a></li>
-                        <li ><a class="btn btn-warning btn-join">Join Now</a></li>
-                    </ul>
-                
-                    <ul class="topleft-info pull-right">
-                        <li><a href="#">Buying Requests</a></li>
-                        <li><a href="#">Start Selling</a></li>
-                        <li><a href="#">Start Buying</a></li>
-                    </ul>
-                </div>
-                <div class="border-bottom-blue">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="search">
-        <div class="row padding-left-right">
-            <div class="col-md-9">
-                <div class="input-group" id="adv-search">
-                    <div class="input-group-btn">
-                        <div class="btn-group" role="group">
-                              <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Products
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a href="#">Normal</a></li>
-                                  <li><a href="#">Disabled</a></li>
-                                  <li><a href="#">Active</a></li>
-                                  <li><a href="#">Normal</a></li>
-                                </ul>
-                              </div>
-                        </div>
-                    </div>
-                    <input type="text" class="form-control" placeholder="What are you looking for ?" />
-                    <div class="input-group-btn">
-                        <div class="btn-group" role="group">
-                            <button type="button" class="btn"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Search</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3" >
-                <a href="#" class="btn btn-default pull-left request-product"><img src="./images/tap-button.png" width="13" height="18">&nbsp;&nbsp;Request Product</a>
-            </div>
-        </div>
-    </div>
-    <!-- Slider -->
-    <div class="slider">
-        <div class="row main-slider flexslider" id="main-slider">
-            
-            <ul class="slides">
-              <li>
-                <img src="images/slides/flexslider/1.png" height="180" alt="" />
-                <a href="#" class="btn btn-default  buy-product">Buy Now</a>
-              </li>
-              <li>
-                <img src="images/slides/flexslider/1.png"  height="180" alt="" />
-                <a href="#" class="btn btn-default  buy-product">Buy Now</a>
-              </li>
-              <li>
-                <img src="images/slides/flexslider/1.png"  height="180" alt="" />
-                <a href="#" class="btn btn-default  buy-product">Buy Now</a>
-              </li>
-              <li>
-                <img src="images/slides/flexslider/1.png"  height="180" alt="" />
-                <a href="#" class="btn btn-default  buy-product">Buy Now</a>
-              </li>
-              <li>
-                <img src="images/slides/flexslider/1.png"  height="180" alt="" />
-                <a href="#" class="btn btn-default buy-product">Buy Now</a>
-              </li>
-            </ul>
-        
-        </div>
-    </div>
-    <!-- end slider -->
-    <div class="best-selling-products" style="position: relative;">
+        <div id="navbar" class="navbar-collapse collapse navbar_coolaspe" aria-expanded="false" style="height: 1px;">
+          <ul class="nav navbar-nav nav_my">
+            <li><a href="#" class="">Help Center</a>
+            <a class="" href="#contact">Contact Us</a></li>
+          </ul>
+          <ul class="nav navbar-nav nav_my navbar-right">
+            <li>
+            	<a href="#">Buying Request</a>
+            	<a href="#">Start Selling</a>
+            	<a href="#">Start Buying</a>	
+            </li>
+            <li class="login_li">
+            <a href="#" class="login_li_login">Login</a>
+           <a href="#" class="login_li_join">Join Now</a></li>
+          </ul>
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container">
+    	<div class="col-sm-8 col-md-8  col-sm-offset-1 col-xs-12 search_area_main">
+    		<div class="input-group  search_area_div">
+    			<select class="form-control search_area_div_select">
+    				<option>Products</option>
+    				<option>Products</option>
+    			</select>
+    			<input type="text" class="form-control search_area_div_input " name="" placeholder="What are you searching for?">
+    			<button class="btn search_area_div_button">
+    				<i class="fa fa-search" aria-hidden="true"></i>
+    				Search 
+    			</button>
+    		</div>
+    	</div>
+    	<div class="col-sm-2 col-md-2 col-xs-12">
+    	<button class="btn request_btn">
 
-        <!-- category start -->
-        <div class="category pull-left" style="position:absolute;top:0px;left:-300px;">
-            <div class="panel">
-                <div class="panel-heading" style="vertical-align: middle;">
-                    <span class="glyphicon glyphicon-list pull-left"></span><strong>Categories</strong>
-                    <div class="pull-right action-buttons">
-                        <a href="#" class="see-all">See all</a>
-                    </div>
-                </div>
-                <div class="panel-body">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <span class="glyphicon">
-                                <img  src="./images/auto.png" width="21" height="19">
-                            </span>
-                            Auto & Auto Parts
-                            <i class="fa fa-angle-right pull-right" aria-hidden="true"></i>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="glyphicon">
-                                <img src="./images/industrial.png" width="21" height="20">
-                            </span>
-                            Industrial & Construction
-                            <i class="fa fa-angle-right pull-right" aria-hidden="true"></i>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="glyphicon">
-                                <img src="./images/electronics.png" width="20" height="25">
-                            </span>
-                            Electronics
-                            <i class="fa fa-angle-right pull-right" aria-hidden="true"></i>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="glyphicon">
-                                <img src="./images/mobile.png" width="21" height="22">
-                            </span>
-                            Mobile Phones & Tablets
-                            <i class="fa fa-angle-right pull-right" aria-hidden="true"></i>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="glyphicon">
-                                <img  src="./images/food.png" width="26" height="24">
-                            </span>
-                            Food,Processing & Production
-                            <i class="fa fa-angle-right pull-right" aria-hidden="true"></i>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="glyphicon">
-                                <img src="./images/packaging.png" width="22" height="24">
-                            </span>
-                            Packaging & Advertising
-                            <i class="fa fa-angle-right pull-right" aria-hidden="true"></i>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="glyphicon">
-                                <img src="./images/home.png" width="23" height="13">
-                            </span>
-                            Home & Office Furniture
-                            <i class="fa fa-angle-right pull-right" aria-hidden="true"></i>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="glyphicon">
-                                <img src="./images/computer.png" width="23" height="19">
-                            </span>
-                            Laptops & Computers
-                            <i class="fa fa-angle-right pull-right" aria-hidden="true"></i>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="glyphicon">
-                                <img src="./images/lamp.png" width="15" height="26">
-                            </span>
-                            Lights & Lighting
-                            <i class="fa fa-angle-right pull-right" aria-hidden="true"></i>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- category end -->
-        <div class="row padding-left-right title-bar">
-            <span class="pull-left sub-menu"><img src="images/products-mark.png"> Best Selling products</span>
-            <span class="pull-right see-all">See all</span>            
-        </div>
-        <div class="row padding-left-right">
-            <div class="col-sm-12">
-                <div class="border-bottom-blue-2"></div>
-            </div>            
-        </div>
-        <div class="row padding-left-right">
-            <div class="col-lg-3 col-sm-6 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15">
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/star-product-1.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $62.5</span>
-                            <span class="product-item">/ item</span>
-                            <span class="product-label"> &nbsp;&nbsp;-45%&nbsp;&nbsp; </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15">
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/star-product-2.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $62.5</span>
-                            <span class="product-item">/ item</span>
-                            <span class="product-label"> &nbsp;&nbsp;-25%&nbsp;&nbsp; </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="border-gray">
-                    <div class="star-bar padding-15">
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/star-product-3.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $62.5</span>
-                            <span class="product-item">/ item</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-25%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="border-gray">
-                        <div class="star-bar padding-15">
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </div>
-                        <div class="product-data">
-                            <img class="product-img" src="images/star-product-4.png">
-                            <div class="product-title top-bottom-space">
-                                The FASTEST Camera Bag in the <br>World The only bag you need
-                            </div>
-                            <div class="detail-data">
-                                <span class="product-price top-bottom-space">US $62.5</span>
-                                <span class="product-item">/ item</span>
-                                <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span>
-                            </div>
-                            <div class="m-order">
-                                <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                            </div>
-                            <div class="stock-item">
-                                <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    		<img src="assets/img/hand_search.png"><span>Ruquest Product</span>
+</button>
+    	</div>
     </div>
-    <div class="recently-viewed-products">
-        <div class="row padding-left-right title-bar">
-            <span class="pull-left sub-menu"><img style="width:28px;height: 18px;" src="images/recently-mark.png"> Recently viewed products</span>
-            <span class="pull-right see-all">See all</span>
+</header>
+<content>
+	<div class="container">
+		<div class="row">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+  			<div class="carousel-inner" role="listbox">
+    		<div class="item active">
+    		  	<img src="assets/img/banner.jpg" alt="...">
+      			<div class="carousel-caption">
+       			</div>
+    		</div>
+   		 	<div class="item">
+     			<img src="assets/img/banner2.jpg" alt="...">
+    			<div class="carousel-caption">
+    		  	</div>
+    		</div>
+    		<div class="item">
+    		  	<img src="assets/img/banner.jpg" alt="...">
+      			<div class="carousel-caption">
+       			</div>
+    		</div>
+
+   
+  			</div>
+  		<!-- Indicators -->
+  			<ol class="carousel-indicators carousel_my_indic">
+  		 		 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+   				 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+   				 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  			</ol>
+			</div>
+		</div>
+		<!-- slider end -->
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-xs-12 left_menu_main_category">
+				<div class="left_menu_category">
+                    <div class="heading_left_menu_category" id="tabmenubtn">
+                    	<span class="heading_left_menu_category_left">
+                    		<img src="assets/img/bar_icon_cat.png">
+                    		Categories
+                    	</span>
+                    	<a href="#">See all</a>
+                    </div>
+                    <div class="category_left_menu">
+                        <ul class="category_left_menu_ul_cat ">
+                            <li class="category_left_menu_ul_li_cat">  
+                            	<a class="" href="category/autos-auto-parts">
+                            		<span>
+                            			<img src="assets/img/cat_car.png"  > Autos & Auto Parts
+                            		</span> 
+                            		<img src="assets/img/cat_right.png">
+                                </a>
+                            </li>
+                            <li class="category_left_menu_ul_li_cat">  
+                            	<a class="" href="category/autos-auto-parts">
+                            		<span>
+                            			<img src="assets/img/cat_ind.png"  > Industrial & Construction
+                            		</span> 
+                            		<img src="assets/img/cat_right.png">
+                                </a>
+                            </li>
+                            <li class="category_left_menu_ul_li_cat">  
+                            	<a class="" href="category/autos-auto-parts">
+                            		<span>
+                            			<img src="assets/img/cat_rad.png"  > Electronics
+                            		</span> 
+                            		<img src="assets/img/cat_right.png">
+                                </a>
+                            </li>
+                            <li class="category_left_menu_ul_li_cat">  
+                            	<a class="" href="category/autos-auto-parts">
+                            		<span>
+                            			<img src="assets/img/cat_mob.png"  > Mobile Phones & Tablets
+                            		</span> 
+                            		<img src="assets/img/cat_right.png">
+                                </a>
+                            </li>
+                            <li class="category_left_menu_ul_li_cat">  
+                            	<a class="" href="category/autos-auto-parts">
+                            		<span>
+                            			<img src="assets/img/cat_foo.png"  > Food, Processing & Production
+                            		</span> 
+                            		<img src="assets/img/cat_right.png">
+                                </a>
+                            </li>
+                            <li class="category_left_menu_ul_li_cat">  
+                            	<a class="" href="category/autos-auto-parts">
+                            		<span>
+                            			<img src="assets/img/cat_adv.png"  > Packaging & Advertising
+                            		</span> 
+                            		<img src="assets/img/cat_right.png">
+                                </a>
+                            </li>
+                            <li class="category_left_menu_ul_li_cat">  
+                            	<a class="" href="category/autos-auto-parts">
+                            		<span>
+                            			<img src="assets/img/cat_hom.png"  > Home & Office Furniture
+                            		</span> 
+                            		<img src="assets/img/cat_right.png">
+                                </a>
+                            </li>
+                            <li class="category_left_menu_ul_li_cat">  
+                            	<a class="" href="category/autos-auto-parts">
+                            		<span>
+                            			<img src="assets/img/cat_com.png"  > Laptops & Computers
+                            		</span> 
+                            		<img src="assets/img/cat_right.png">
+                                </a>
+                            </li>
+                            <li class="category_left_menu_ul_li_cat">  
+                            	<a class="" href="category/autos-auto-parts">
+                            		<span>
+                            			<img src="assets/img/cat_bul.png"  > Lights & Lighting
+                            		</span> 
+                            		<img src="assets/img/cat_right.png">
+                                </a>
+                            </li>
+                        </ul>
+
+			</div>
+
+
+		</div>
+	</div>
+	
+	<div class="col-lg-9 col-md-9 col-xs-12 right_best_selling_main">
+		<div class="right_best_selling">
+			<div class="heading_left_menu_category" id="tabmenubtn">
+                <span class="heading_left_menu_category_left">
+                <img src="assets/img/best_selling_ico.png">
+                    Best selling products
+                </span>
+                <a href="#">See all</a>
+            </div>
+            <div class="row selling_pro">
+            	<div class="col-md-3 col-lg-3  col-sm-6 col-xs-12 best_selling_product_main ">
+
+            		<a href ="#" class="best_selling_product">
+            		<div class="best_selling_product_stars">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            		</div>
+            		<div class="best_selling_product_img">
+            			<img src="assets/img/product_selling_img.jpg">
+            		</div>
+            		<div class="best_selling_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="best_selling_product_price">
+            			<span class="best_selling_product_price_span_p">US $62.5</span>
+            			<span class="best_selling_product_price_span_item">/item</span>
+            			<span class="best_selling_product_price_span_dis">- 45%</span>
+            		</div>
+            		<div class="best_selling_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="best_selling_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-3 col-lg-3  col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="best_selling_product">
+            		<div class="best_selling_product_stars">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            		</div>
+            		<div class="best_selling_product_img">
+            			<img src="assets/img/product_selling_img2.jpg">
+            		</div>
+            		<div class="best_selling_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="best_selling_product_price">
+            			<span class="best_selling_product_price_span_p">US $62.5</span>
+            			<span class="best_selling_product_price_span_item">/item</span>
+            			<span class="best_selling_product_price_span_dis">- 45%</span>
+            		</div>
+            		<div class="best_selling_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="best_selling_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="best_selling_product">
+            		<div class="best_selling_product_stars">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            		</div>
+            		<div class="best_selling_product_img">
+            			<img src="assets/img/product_selling_img3.jpg">
+            		</div>
+            		<div class="best_selling_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="best_selling_product_price">
+            			<span class="best_selling_product_price_span_p">US $62.5</span>
+            			<span class="best_selling_product_price_span_item">/item</span>
+            			<span class="best_selling_product_price_span_dis">- 45%</span>
+            		</div>
+            		<div class="best_selling_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="best_selling_product_stock">
+            			<img src="assets/img/order_stock_check5.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="best_selling_product">
+            		<div class="best_selling_product_stars">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            			<img src="assets/img/star_rating.png">
+            		</div>
+            		<div class="best_selling_product_img">
+            			<img src="assets/img/product_selling_img4.jpg">
+            		</div>
+            		<div class="best_selling_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="best_selling_product_price">
+            			<span class="best_selling_product_price_span_p">US $62.5</span>
+            			<span class="best_selling_product_price_span_item">/item</span>
+            			<span class="best_selling_product_price_span_dis">- 45%</span>
+            		</div>
+            		<div class="best_selling_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="best_selling_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	
+            	
+
+            </div>
+
+		</div>
+	</div>
+	</div>
+	<!--recent products-->
+	<div class="row recent_view2_row">
+		<div class="recent_product_main">
+			<div class="heading_left_menu_category" id="tabmenubtn">
+                <span class="heading_left_menu_category_left">
+                <img src="assets/img/recent_view.png">
+                    Recently viewed products
+                </span>
+                <a href="#">See all</a>
+            </div>
+            <div class="recent_view_product_area">
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="recent_product">
+            		<div class="recent_product_img">
+            			<img src="assets/img/product_selling_img5.jpg">
+            		</div>
+            		<div class="recent_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="recent_product_price">
+            			<span class="recent_product_price_span_p">US $12.5 - 22.5</span>
+            			<span class="recent_product_price_span_it">/item</span>
+            			<span class="recent_product_price_span_per">- 45%</span>
+            			<span class="recent_product_price_span_cut">US $12.5</span>
+            			
+            		</div>
+            		<div class="recent_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="recent_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="recent_product">
+            		<div class="recent_product_img">
+            			<img src="assets/img/product_selling_img6.jpg">
+            		</div>
+            		<div class="recent_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="recent_product_price">
+            			<span class="recent_product_price_span_p">US $22.5</span>
+            			<span class="recent_product_price_span_it">/item</span>
+            			
+            			<span class="recent_product_price_span_per">- 45%</span>
+            			<span class="recent_product_price_span_cut">US $12.5</span>
+            		</div>
+            		<div class="recent_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="recent_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="recent_product">
+            		<div class="recent_product_img">
+            			<img src="assets/img/product_selling_img7.jpg">
+            		</div>
+            		<div class="recent_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="recent_product_price">
+            			<span class="recent_product_price_span_p">US $22.5</span>
+            			<span class="recent_product_price_span_it">/item</span>
+            			<span class="recent_product_price_span_per">- 45%</span>
+            		</div>
+            		<div class="recent_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="recent_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="recent_product">
+            		<div class="recent_product_img">
+            			<img src="assets/img/product_selling_img8.jpg">
+            		</div>
+            		<div class="recent_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="recent_product_price">
+            			<span class="recent_product_price_span_p">US $22.5</span>
+            			<span class="recent_product_price_span_it">/item</span>
+            			
+            		</div>
+            		<div class="recent_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="recent_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="recent_product">
+            		<div class="recent_product_img">
+            			<img src="assets/img/product_selling_img9.jpg">
+            		</div>
+            		<div class="recent_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="recent_product_price">
+            			<span class="recent_product_price_span_p">US $22.5</span>
+            			<span class="recent_product_price_span_it">/item</span>
+            			<span class="recent_product_price_span_per">- 45%</span>
+            		</div>
+            		<div class="recent_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="recent_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="recent_product">
+            		<div class="recent_product_img">
+            			<img src="assets/img/product_selling_img.jpg">
+            		</div>
+            		<div class="recent_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="recent_product_price">
+            			<span class="recent_product_price_span_p">US $12.5 - 22.5</span>
+            			<span class="recent_product_price_span_it">/item</span>
+            			<span class="recent_product_price_span_per">- 45%</span>
+            			<span class="recent_product_price_span_cut">US $12.5</span>
+            			
+            		</div>
+            		<div class="recent_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="recent_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	
+
+            </div>
+		</div>
+
+	</div>
+	<div class="row recent_view2_row">
+		<div class="recent_product_main">
+			<div class="heading_left_menu_category" id="tabmenubtn">
+                <span class="heading_left_menu_category_left">
+                <img src="assets/img/fetured_products.png">
+                   Featured Products
+                </span>
+                <a href="#">See all</a>
+            </div>
+            <div class="featured_view_product_area">
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="recent_product">
+            		<div class="featured_product_img">
+            			<img src="assets/img/product_selling_img2.jpg">
+            		</div>
+            		<div class="featured_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="featured_product_price">
+            			<span class="recent_product_price_span_p">US $12.5 - 22.5</span>
+            			<span class="recent_product_price_span_it">/item</span>
+            			<span class="recent_product_price_span_per">- 45%</span>
+            			<span class="recent_product_price_span_cut">US $12.5</span>
+            			
+            		</div>
+            		<div class="featured_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="featured_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="recent_product">
+            		<div class="featured_product_img">
+            			<img src="assets/img/product_selling_img4.jpg">
+            		</div>
+            		<div class="featured_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="featured_product_price">
+            			<span class="recent_product_price_span_p">US $12.5 - 22.5</span>
+            			<span class="recent_product_price_span_it">/item</span>
+            			<span class="recent_product_price_span_per">- 45%</span>
+            			<span class="recent_product_price_span_cut">US $12.5</span>
+            			
+            		</div>
+            		<div class="featured_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="featured_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="recent_product">
+            		<div class="featured_product_img">
+            			<img src="assets/img/product_selling_img6.jpg">
+            		</div>
+            		<div class="featured_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="featured_product_price">
+            			<span class="recent_product_price_span_p">US $12.5 - 22.5</span>
+            			<span class="recent_product_price_span_it">/item</span>
+            			<span class="recent_product_price_span_per">- 45%</span>
+            			<span class="recent_product_price_span_cut">US $12.5</span>
+            			
+            		</div>
+            		<div class="featured_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="featured_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="recent_product">
+            		<div class="featured_product_img">
+            			<img src="assets/img/product_selling_img7.jpg">
+            		</div>
+            		<div class="featured_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="featured_product_price">
+            			<span class="recent_product_price_span_p">US $12.5 - 22.5</span>
+            			<span class="recent_product_price_span_it">/item</span>
+            			<span class="recent_product_price_span_per">- 45%</span>
+            			<span class="recent_product_price_span_cut">US $12.5</span>
+            			
+            		</div>
+            		<div class="featured_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="featured_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="recent_product">
+            		<div class="featured_product_img">
+            			<img src="assets/img/product_selling_img9.jpg">
+            		</div>
+            		<div class="featured_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="featured_product_price">
+            			<span class="recent_product_price_span_p">US $12.5 - 22.5</span>
+            			<span class="recent_product_price_span_it">/item</span>
+            			<span class="recent_product_price_span_per">- 45%</span>
+            			<span class="recent_product_price_span_cut">US $12.5</span>
+            			
+            		</div>
+            		<div class="featured_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="featured_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 best_selling_product_main ">
+            		<a href="#" class="recent_product">
+            		<div class="featured_product_img">
+            			<img src="assets/img/product_selling_img6.jpg">
+            		</div>
+            		<div class="featured_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="featured_product_price">
+            			<span class="recent_product_price_span_p">US $12.5 - 22.5</span>
+            			<span class="recent_product_price_span_it">/item</span>
+            			<span class="recent_product_price_span_per">- 45%</span>
+            			<span class="recent_product_price_span_cut">US $12.5</span>
+            			
+            		</div>
+            		<div class="featured_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="featured_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+
+            	
+            	
+
+            </div>
+		</div>
+
+	</div>
+	<div class="row bulk_deals_row">
+		<!--bulk deals-->
+		<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 bulk_deals ">
+			<div class="bulk_deals_main clearfix">
+				<div class="bulk_deals_heading">
+					<span>Bulk Deals</span>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</div>
+			
+					<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 buldel">
+						<a href ="#" class="bulk_deals_product">
+            				<div class="bulk_deals_product_img">
+            					<img src="assets/img/product_selling_img2.jpg">
+            				</div>
+            				<div class="bulk_deals_product_name">
+            					The FASTEST Camera Bag in the 
+								World The only bag you need
+            				</div>
+            				<div class="bulk_deals_product_price">
+            					<span class="bulk_deals_product_price_span_p">US $62.5</span>
+            					<span class="bulk_deals_product_price_span_item">/item</span>
+            					
+            				</div>
+            				<div class="bulk_deals_product_order">
+            					<img src="assets/img/stock_check.png">
+            					Minimum Order : 500 Items
+            				</div>
+            				<div class="bulk_deals_product_stock">
+            					<img src="assets/img/order_stock_check.png">
+            					In Stock : 2000 Items
+            				</div>
+            			</a>
+					</div>
+					<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 buldel">
+						<a href ="#" class="bulk_deals_product">
+            				<div class="bulk_deals_product_img">
+            					<img src="assets/img/product_selling_img4.jpg">
+            				</div>
+            				<div class="bulk_deals_product_name">
+            					The FASTEST Camera Bag in the 
+								World The only bag you need
+            				</div>
+            				<div class="bulk_deals_product_price">
+            					<span class="bulk_deals_product_price_span_p">US $62.5</span>
+            					<span class="bulk_deals_product_price_span_item">/item</span>
+            					
+            				</div>
+            				<div class="bulk_deals_product_order">
+            					<img src="assets/img/stock_check.png">
+            					Minimum Order : 500 Items
+            				</div>
+            				<div class="bulk_deals_product_stock">
+            					<img src="assets/img/order_stock_check.png">
+            					In Stock : 2000 Items
+            				</div>
+            			</a>
+					</div>
+					<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 buldel">
+						<a href ="#" class="bulk_deals_product">
+            				<div class="bulk_deals_product_img">
+            					<img src="assets/img/product_selling_img3.jpg">
+            				</div>
+            				<div class="bulk_deals_product_name">
+            					The FASTEST Camera Bag in the 
+								World The only bag you need
+            				</div>
+            				<div class="bulk_deals_product_price">
+            					<span class="bulk_deals_product_price_span_p">US $62.5</span>
+            					<span class="bulk_deals_product_price_span_item">/item</span>
+            					
+            				</div>
+            				<div class="bulk_deals_product_order">
+            					<img src="assets/img/stock_check.png">
+            					Minimum Order : 500 Items
+            				</div>
+            				<div class="bulk_deals_product_stock">
+            					<img src="assets/img/order_stock_check.png">
+            					In Stock : 2000 Items
+            				</div>
+            			</a>
+					</div>
+				
+				
+			</div>
+
+
+		</div>
+		<!--clearance deals-->
+		<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 bulk_deals ">
+			<div class="bulk_deals_main clearfix">
+				<div class="bulk_deals_heading">
+					<span>Clearance Deals</span>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</div>
+			
+					<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 buldel">
+						<a href ="#" class="bulk_deals_product">
+            				<div class="bulk_deals_product_img">
+            					<img src="assets/img/product_selling_img5.jpg">
+            				</div>
+            				<div class="bulk_deals_product_name">
+            					The FASTEST Camera Bag in the 
+								World The only bag you need
+            				</div>
+            				<div class="bulk_deals_product_price">
+            					<span class="bulk_deals_product_price_span_p">US $62.5</span>
+            					<span class="bulk_deals_product_price_span_item">/item</span>
+            					
+            				</div>
+            				<div class="bulk_deals_product_order">
+            					<img src="assets/img/stock_check.png">
+            					Minimum Order : 500 Items
+            				</div>
+            				<div class="bulk_deals_product_stock">
+            					<img src="assets/img/order_stock_check.png">
+            					In Stock : 2000 Items
+            				</div>
+            			</a>
+					</div>
+					<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 buldel">
+						<a href ="#" class="bulk_deals_product">
+            				<div class="bulk_deals_product_img">
+            					<img src="assets/img/product_selling_img4.jpg">
+            				</div>
+            				<div class="bulk_deals_product_name">
+            					The FASTEST Camera Bag in the 
+								World The only bag you need
+            				</div>
+            				<div class="bulk_deals_product_price">
+            					<span class="bulk_deals_product_price_span_p">US $62.5</span>
+            					<span class="bulk_deals_product_price_span_item">/item</span>
+            					
+            				</div>
+            				<div class="bulk_deals_product_order">
+            					<img src="assets/img/stock_check.png">
+            					Minimum Order : 500 Items
+            				</div>
+            				<div class="bulk_deals_product_stock">
+            					<img src="assets/img/order_stock_check.png">
+            					In Stock : 2000 Items
+            				</div>
+            			</a>
+					</div>
+					<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 buldel">
+						<a href ="#" class="bulk_deals_product">
+            				<div class="bulk_deals_product_img">
+            					<img src="assets/img/product_selling_img7.jpg">
+            				</div>
+            				<div class="bulk_deals_product_name">
+            					The FASTEST Camera Bag in the 
+								World The only bag you need
+            				</div>
+            				<div class="bulk_deals_product_price">
+            					<span class="bulk_deals_product_price_span_p">US $62.5</span>
+            					<span class="bulk_deals_product_price_span_item">/item</span>
+            					
+            				</div>
+            				<div class="bulk_deals_product_order">
+            					<img src="assets/img/stock_check.png">
+            					Minimum Order : 500 Items
+            				</div>
+            				<div class="bulk_deals_product_stock">
+            					<img src="assets/img/order_stock_check.png">
+            					In Stock : 2000 Items
+            				</div>
+            			</a>
+					</div>
+				
+				
+			</div>
+
+
+		</div>
+	</div>
+	<!--recent added products-->
+	<div class="row recent_v_row">
+		<div class="recent_v_main">
+			<div class="heading_left_menu_category" id="tabmenubtn">
+                <span class="heading_left_menu_category_left">
+                <img src="assets/img/recently_added.png">
+                   Recently added products
+                </span>
+                <a href="#">See all</a>
+            </div>
+            <div class="recent_v_product_area">
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 recent_v_product_main ">
+            		<a href="#" class="recent_v_product">
+            		<div class="recent_v_product_img">
+            			<img src="assets/img/product_selling_img4.jpg">
+            		</div>
+            		<div class="recent_v_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="recent_v_product_price">
+            			<span class="recent_v_product_price_span_p">Ruquest Quote</span>
+            			
+            		</div>
+            		<div class="recent_v_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="recent_v_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 recent_v_product_main ">
+            		<a href="#" class="recent_v_product">
+            		<div class="recent_v_product_img">
+            			<img src="assets/img/product_selling_img3.jpg">
+            		</div>
+            		<div class="recent_v_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="recent_v_product_price">
+            			<span class="recent_v_product_price_span_p">Ruquest Quote</span>
+            			
+            		</div>
+            		<div class="recent_v_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="recent_v_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 recent_v_product_main ">
+            		<a href="#" class="recent_v_product">
+            		<div class="recent_v_product_img">
+            			<img src="assets/img/product_selling_img9.jpg">
+            		</div>
+            		<div class="recent_v_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="recent_v_product_price">
+            			<span class="recent_v_product_price_span_p">Ruquest Quote</span>
+            			
+            		</div>
+            		<div class="recent_v_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="recent_v_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 recent_v_product_main ">
+            		<a href="#" class="recent_v_product">
+            		<div class="recent_v_product_img">
+            			<img src="assets/img/product_selling_img5.jpg">
+            		</div>
+            		<div class="recent_v_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="recent_v_product_price">
+            			<span class="recent_v_product_price_span_p">Ruquest Quote</span>
+            			
+            		</div>
+            		<div class="recent_v_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="recent_v_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 recent_v_product_main ">
+            		<a href="#" class="recent_v_product">
+            		<div class="recent_v_product_img">
+            			<img src="assets/img/product_selling_img3.jpg">
+            		</div>
+            		<div class="recent_v_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="recent_v_product_price">
+            			<span class="recent_v_product_price_span_p">Ruquest Quote</span>
+            			
+            		</div>
+            		<div class="recent_v_product_order">
+            			<img src="assets/img/stock_check.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="recent_v_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	<div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 recent_v_product_main ">
+            		<a href="#" class="recent_v_product">
+            		<div class="recent_v_product_img">
+            			<img src="assets/img/product_selling_img8.jpg">
+            		</div>
+            		<div class="recent_v_product_name">
+            			The FASTEST Camera Bag in the 
+						World The only bag you need
+            		</div>
+            		<div class="recent_v_product_price">
+            			<span class="recent_v_product_price_span_p">Ruquest Quote</span>
+            			
+            		</div>
+            		<div class="recent_v_product_order">
+            			<img src="assets/img/stock_check2.png">
+            			Minimum Order : 500 Items
+            		</div>
+            		<div class="recent_v_product_stock">
+            			<img src="assets/img/order_stock_check.png">
+            			In Stock : 2000 Items
+            		</div>
+            		</a>
+            	</div>
+            	
+            </div>
+		</div>
+	</div>
+	<!--vendors and brands-->
+	<div class="row vendors_row">
+			<div class="heading_left_menu_category" id="tabmenubtn">
+                <span class="heading_left_menu_category_left">
+                <img src="assets/img/vendors_brands.png">
+                   Vendors and Brands
+                </span>
+                <a href="#">See all</a>
+            </div>
+		<div class="col-sm-12 col-md-6 col-xs-12 ">
+			<div class="suppliers_featured clearfix">
+				<div class="suppliers_featured_heading">
+					<span>Featured Suppliers </span>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</div>
+				<div class="suppliers_featured_products_main">
+					<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12  suppliers_featured_col">
+						<div class="suppliers_featured_products">
+							<div class="suppliers_featured_products_logo">
+								<img src="assets/img/supplierlogo.png">
+							</div>
+							<div class="suppliers_featured_products_name">
+								Company Name
+							</div>
+							<div class="suppliers_featured_products_vendor">
+								<img src="assets/img/vendor_logo.png">
+								<span>2 Years Premium Vendor</span>
+							</div>
+							<div class="suppliers_featured_products_rating">
+								<img src="assets/img/star_rating.png">
+            					<img src="assets/img/star_rating.png">
+            					<img src="assets/img/star_rating.png">
+            					<img src="assets/img/star_rating.png">
+            					<img src="assets/img/star_rating.png">
+							</div>
+							<div class="suppliers_featured_products_storelink">
+								<a href="#">
+									<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+									<span>Go to Store</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-sm-6 col-xs-12  suppliers_featured_col">
+						<div class="suppliers_featured_products">
+							<div class="suppliers_featured_products_logo">
+								<img src="assets/img/supplierlogo2.png">
+							</div>
+							<div class="suppliers_featured_products_name">
+								Company Name
+							</div>
+							<div class="suppliers_featured_products_vendor">
+								<img src="assets/img/vendor_logo.png">
+								<span>2 Years Premium Vendor</span>
+							</div>
+							<div class="suppliers_featured_products_rating">
+								<img src="assets/img/star_rating.png">
+            					<img src="assets/img/star_rating.png">
+            					<img src="assets/img/star_rating.png">
+            					<img src="assets/img/star_rating.png">
+            					<img src="assets/img/star_rating.png">
+							</div>
+							<div class="suppliers_featured_products_storelink">
+								<a href="#">
+									<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+									<span>Go to Store</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 .latest_vendors_col col-xs-12 suppliers_featured_col  ">
+						<div class="suppliers_featured_products">
+							<div class="suppliers_featured_products_logo">
+								<img src="assets/img/supplierlogo3.png">
+							</div>
+							<div class="suppliers_featured_products_name">
+								Company Name
+							</div>
+							<div class="suppliers_featured_products_vendor">
+								<img src="assets/img/vendor_logo.png">
+								<span>2 Years Premium Vendor</span>
+							</div>
+							<div class="suppliers_featured_products_rating">
+								<img src="assets/img/star_rating.png">
+            					<img src="assets/img/star_rating.png">
+            					<img src="assets/img/star_rating.png">
+            					<img src="assets/img/star_rating.png">
+            					<img src="assets/img/star_rating.png">
+							</div>
+							<div class="suppliers_featured_products_storelink">
+								<a href="#">
+									<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+									<span>Go to Store</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-6 col-xs-12 ">
+			<div class="latest_vendors clearfix">
+				<div class="latest_vendors_heading">
+					<span>Latest Vendors </span>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</div>
+				<div class="latest_vendors_products_main">
+					<div class="latest_vendors_col">
+						<a href="#"class="latest_vendors_products">
+								<img src="assets/img/vendorlogo.png">
+						</a>
+					</div>
+					<div class="latest_vendors_col">
+						<a href="#"class="latest_vendors_products">
+								<img src="assets/img/vendorlogo2.png">
+						</a>
+					</div>
+					<div class="latest_vendors_col">
+						<a href="#"class="latest_vendors_products">
+								<img src="assets/img/vendorlogo3.png">
+						</a>
+					</div>
+					<div class="latest_vendors_col">
+						<a href="#"class="latest_vendors_products">
+								<img src="assets/img/vendorlogo4.png">
+						</a>
+					</div>
+					<div class="latest_vendors_col">
+						<a href="#"class="latest_vendors_products">
+								<img src="assets/img/vendorlogo5.png">
+						</a>
+					</div>
+					<div class="latest_vendors_col">
+						<a href="#"class="latest_vendors_products">
+								<img src="assets/img/vendorlogo6.png">
+						</a>
+					</div>
+					<div class="latest_vendors_col">
+						<a href="#"class="latest_vendors_products">
+								<img src="assets/img/vendorlogo7.png">
+						</a>
+					</div>
+					<div class="latest_vendors_col">
+						<a href="#"class="latest_vendors_products">
+								<img src="assets/img/vendorlogo8.png">
+						</a>
+					</div>
+					<div class="latest_vendors_col">
+						<a href="#"class="latest_vendors_products">
+								<img src="assets/img/vendorlogo9.png">
+						</a>
+					</div>
+					<div class="latest_vendors_col">
+						<a href="#"class="latest_vendors_products">
+								<img src="assets/img/vendorlogo10.png">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--our services-->
+	<div class="row servies_row">
+		<div class="heading_left_menu_category" id="tabmenubtn">
+                <span class="heading_left_menu_category_left">
+                <img src="assets/img/our_services_logo.png">
+                  Our Services
+                </span>
+                <a href="#">See all</a>
         </div>
-        <div class="row padding-left-right">
-            <div class="col-sm-12">
-                <div class="border-bottom-blue-2"></div>
-            </div>            
-        </div>
-        <div class="row padding-left-right">
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/recent-product-1.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $12.25 - 22.5</span>
-                            <span class="product-item">/ item</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-low-price top-bottom-space">US $12.5</span>
-                            <span class="product-item">&nbsp;&nbsp;&nbsp;</span>
-                            <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/recent-product-2.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $62.5</span>
-                            <span class="product-item">/ item</span>
-                            <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span>
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-low-price top-bottom-space">US $22.5</span>
-                            <span class="product-item">&nbsp;&nbsp;&nbsp;</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/recent-product-3.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $62.5</span>
-                            <span class="product-item">/ item</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-low-price top-bottom-space">US $12.5</span>
-                            <span class="product-item">&nbsp;&nbsp;&nbsp;</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/recent-product-4.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $62.5</span>
-                            <span class="product-item">/ item</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-low-price top-bottom-space">US $12.5</span>
-                            <span class="product-item">&nbsp;&nbsp;&nbsp;</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/recent-product-5.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $62.5</span>
-                            <span class="product-item">/ item</span>
-                            <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span>
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-low-price top-bottom-space">US $12.5</span>
-                            <span class="product-item">&nbsp;&nbsp;&nbsp;</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/recent-product-6.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $62.5</span>
-                            <span class="product-item">/ item</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="detail-data">
-                            <!-- <span class="product-low-price top-bottom-space">US $12.5</span> -->
-                            <span class="product-item">&nbsp;&nbsp;&nbsp;</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="featured-products">
-        <div class="row padding-left-right title-bar">
-            <span class="pull-left sub-menu"><img class="icon-class" src="images/featured-product.png"> Featured products</span>
-            <span class="pull-right see-all">See all</span>
+        <div class="services_main">
+        	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 services_product_col">
+        		<div class="services_product_main">
+        			<div class="services_product_img ">
+        				<img src="assets/img/ser_inc.png">
+        			</div>
+        			<div class="services_product_text ">
+        				<h4>Inspection Service</h4>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        			</div>        		
+        		</div>
+        	</div>
+        	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 services_product_col">
+        		<div class="services_product_main">
+        			<div class="services_product_img ">
+        				<img src="assets/img/ser_cre.png">
+        			</div>
+        			<div class="services_product_text ">
+        				<h4>e - Credit Line</h4>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        			</div>        		
+        		</div>
+        	</div>
+        	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 services_product_col">
+        		<div class="services_product_main">
+        			<div class="services_product_img ">
+        				<img src="assets/img/ser_wor.png">
+        			</div>
+        			<div class="services_product_text ">
+        				<h4>Logistics Service</h4>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        			</div>        		
+        		</div>
+        	</div>
+        	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 services_product_col">
+        		<div class="services_product_main">
+        			<div class="services_product_img ">
+        				<img src="assets/img/ser_per.png">
+        			</div>
+        			<div class="services_product_text ">
+        				<h4>Business Identity</h4>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        				<span>Lorem ipsum dolor sit amet conc</span>
+        			</div>        		
+        		</div>
+        	</div>
+
 
         </div>
-        <div class="row padding-left-right">
-            <div class="col-sm-12">
-                <div class="border-bottom-blue-2"></div>
-            </div>            
-        </div>
-        <div class="row padding-left-right">
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/feature-product-1.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $12.5 - 22.5</span>
-                            <span class="product-item">/ item</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-low-price top-bottom-space">US $12.5</span>
-                            <span class="product-item">&nbsp;&nbsp;&nbsp;</span>
-                            <span class="product-label"> &nbsp;&nbsp;-45%&nbsp;&nbsp; </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/feature-product-2.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $12.5 - 22.5</span>
-                            <span class="product-item">/ item</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-low-price top-bottom-space">US $12.5</span>
-                            <span class="product-item">&nbsp;&nbsp;&nbsp;</span>
-                            <span class="product-label"> &nbsp;&nbsp;-45%&nbsp;&nbsp; </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/feature-product-3.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $12.5 - 22.5</span>
-                            <span class="product-item">/ item</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-low-price top-bottom-space">US $12.5</span>
-                            <span class="product-item">&nbsp;&nbsp;&nbsp;</span>
-                            <span class="product-label"> &nbsp;&nbsp;-45%&nbsp;&nbsp; </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/feature-product-4.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $12.5 - 22.5</span>
-                            <span class="product-item">/ item</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-low-price top-bottom-space">US $12.5</span>
-                            <span class="product-item">&nbsp;&nbsp;&nbsp;</span>
-                            <span class="product-label"> &nbsp;&nbsp;-45%&nbsp;&nbsp; </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/feature-product-5.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $12.5 - 22.5</span>
-                            <span class="product-item">/ item</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-low-price top-bottom-space">US $12.5</span>
-                            <span class="product-item">&nbsp;&nbsp;&nbsp;</span>
-                            <span class="product-label"> &nbsp;&nbsp;-45%&nbsp;&nbsp; </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/feature-product-6.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-price top-bottom-space">US $12.5 - 22.5</span>
-                            <span class="product-item">/ item</span>
-                            <!-- <span class="product-label"> &nbsp;&nbsp;-35%&nbsp;&nbsp; </span> -->
-                        </div>
-                        <div class="detail-data">
-                            <span class="product-low-price top-bottom-space">US $12.5</span>
-                            <span class="product-item">&nbsp;&nbsp;&nbsp;</span>
-                            <span class="product-label"> &nbsp;&nbsp;-45%&nbsp;&nbsp; </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="deals">
-        <div class="row top-bottom-space"></div>
-        <div class="row padding-left-right top-bottom-space">
-            <div class="col-lg-6 col-md-6 col-sm-12 top-bottom-space">
-                <div class="border-blue padding-left-right top-bottom-space">
-                    <div class="deals-bar">
-                        <span class="pull-left sub-menu-italic">Bulk Deals</span>
-                        <div class="pull-right show-more">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                     <div class="row top-bottom-space">
-                        <div class="col-sm-4 col-md-6 col-lg-4">
-                            <div>
-                                <div class="star-bar padding-15"></div>
-                                <div class="product-data">
-                                    <img class="product-img" src="images/star-product-1.png">
-                                    <div class="product-title top-bottom-space">
-                                        The FASTEST Camera Bag in the <br>World The only bag you need
-                                    </div>
-                                    <div class="detail-data">
-                                        <span class="product-price top-bottom-space">US $62.5</span>
-                                        <span class="product-item">/ item</span>
-                                        <!-- <span class="product-label"> &nbsp;&nbsp;-25%&nbsp;&nbsp; </span> -->
-                                    </div>
-                                    <div class="m-order">
-                                        <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                                    </div>
-                                    <div class="stock-item">
-                                        <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-md-6 col-lg-4">
-                            <div>
-                                <div class="star-bar padding-15"></div>
-                                <div class="product-data">
-                                    <img class="product-img" src="images/star-product-2.png">
-                                    <div class="product-title top-bottom-space">
-                                        The FASTEST Camera Bag in the <br>World The only bag you need
-                                    </div>
-                                    <div class="detail-data">
-                                        <span class="product-price top-bottom-space">US $62.5</span>
-                                        <span class="product-item">/ item</span>
-                                        <!-- <span class="product-label"> &nbsp;&nbsp;-25%&nbsp;&nbsp; </span> -->
-                                    </div>
-                                    <div class="m-order">
-                                        <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                                    </div>
-                                    <div class="stock-item">
-                                        <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-md-6 col-lg-4">
-                            <div>
-                                <div class="star-bar padding-15"></div>
-                                <div class="product-data">
-                                    <img class="product-img" src="images/star-product-3.png">
-                                    <div class="product-title top-bottom-space">
-                                        The FASTEST Camera Bag in the <br>World The only bag you need
-                                    </div>
-                                    <div class="detail-data">
-                                        <span class="product-price top-bottom-space">US $62.5</span>
-                                        <span class="product-item">/ item</span>
-                                        <!-- <span class="product-label"> &nbsp;&nbsp;-25%&nbsp;&nbsp; </span> -->
-                                    </div>
-                                    <div class="m-order">
-                                        <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                                    </div>
-                                    <div class="stock-item">
-                                        <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 top-bottom-space">
-                <div class="border-blue padding-left-right top-bottom-space">
-                    <div class="deals-bar">
-                        <span class="pull-left sub-menu-italic">Clearance Deals</span>
-                        <div class="pull-right show-more">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                     <div class="row top-bottom-space">
-                        <div class="col-sm-4 col-md-6 col-lg-4">
-                            <div>
-                                <div class="star-bar padding-15"></div>
-                                <div class="product-data">
-                                    <img class="product-img" src="images/star-product-1.png">
-                                    <div class="product-title top-bottom-space">
-                                        The FASTEST Camera Bag in the <br>World The only bag you need
-                                    </div>
-                                    <div class="detail-data">
-                                        <span class="product-price top-bottom-space">US $62.5</span>
-                                        <span class="product-item">/ item</span>
-                                        <!-- <span class="product-label"> &nbsp;&nbsp;-25%&nbsp;&nbsp; </span> -->
-                                    </div>
-                                    <div class="m-order">
-                                        <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                                    </div>
-                                    <div class="stock-item">
-                                        <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-md-6 col-lg-4">
-                            <div>
-                                <div class="star-bar padding-15"></div>
-                                <div class="product-data">
-                                    <img class="product-img" src="images/star-product-2.png">
-                                    <div class="product-title top-bottom-space">
-                                        The FASTEST Camera Bag in the <br>World The only bag you need
-                                    </div>
-                                    <div class="detail-data">
-                                        <span class="product-price top-bottom-space">US $62.5</span>
-                                        <span class="product-item">/ item</span>
-                                        <!-- <span class="product-label"> &nbsp;&nbsp;-25%&nbsp;&nbsp; </span> -->
-                                    </div>
-                                    <div class="m-order">
-                                        <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                                    </div>
-                                    <div class="stock-item">
-                                        <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-md-6 col-lg-4">
-                            <div>
-                                <div class="star-bar padding-15"></div>
-                                <div class="product-data">
-                                    <img class="product-img" src="images/star-product-3.png">
-                                    <div class="product-title top-bottom-space">
-                                        The FASTEST Camera Bag in the <br>World The only bag you need
-                                    </div>
-                                    <div class="detail-data">
-                                        <span class="product-price top-bottom-space">US $62.5</span>
-                                        <span class="product-item">/ item</span>
-                                        <!-- <span class="product-label"> &nbsp;&nbsp;-25%&nbsp;&nbsp; </span> -->
-                                    </div>
-                                    <div class="m-order">
-                                        <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                                    </div>
-                                    <div class="stock-item">
-                                        <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="recently-added-products">
-        <div class="row padding-left-right title-bar">
-            <span class="pull-left sub-menu"><img src="images/recent-add-product.png"> Recently added products</span>
-            <span class="pull-right see-all">See all</span>
+	</div>
 
-        </div>
-        <div class="row padding-left-right">
-            <div class="col-sm-12">
-                <div class="border-bottom-blue-2"></div>
-            </div>            
-        </div>
-        <div class="row top-bottom-space padding-left-right">
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/recent-product-1.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="request-label"> Request Quate </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/recent-product-2.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="request-label"> Request Quate </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/recent-product-3.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="request-label"> Request Quate </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/recent-product-4.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="request-label"> Request Quate </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/recent-product-5.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="request-label"> Request Quate </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 top-bottom-space">
-                <div class="border-gray product">
-                    <div class="star-bar padding-15"></div>
-                    <div class="product-data">
-                        <img class="product-img" src="images/recent-product-6.png">
-                        <div class="product-title top-bottom-space">
-                            The FASTEST Camera Bag in the <br>World The only bag you need
-                        </div>
-                        <div class="detail-data">
-                            <span class="request-label"> Request Quate </span>
-                        </div>
-                        <div class="m-order">
-                            <span><img src="images/check-green.png"></span><span> Minimun order:500 items</span>
-                        </div>
-                        <div class="stock-item">
-                            <span><img src="images/stock-img.png"></span><span> In Stock: 2000items</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="deals">
-        <div class="row padding-left-right title-bar">
-            <span class="pull-left sub-menu"><img src="images/vendor.png"> Vendor and Brands</span>
-            <span class="pull-right see-all">See all</span>
-        </div>
-        <div class="row padding-left-right">
-            <div class="col-sm-12">
-                <div class="border-bottom-blue-2"></div>
-            </div>            
-        </div>
-        <div class="row padding-left-right top-bottom-space featured-suppliers">
-            <div class="col-lg-6 col-md-6 col-sm-12 top-bottom-space">
-                <div class="border-gray padding-left-right top-bottom-space">
-                    <div class="deals-bar">
-                        <span class="pull-left sub-menu-italic">Featured Suppliers</span>
-                        <div class="pull-right show-more">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                     <div class="row top-bottom-space">
-                        <div class="col-sm-4">
-                            <div>
-                                <div class="star-bar padding-15"></div>
-                                <div class="product-data">
-                                    <img class="product-img" src="images/company-1.png">
-                                    <div class="product-title top-bottom-space"></div>
-                                    <div class="detail-data">
-                                        <span class="product-price top-bottom-space">Company Name</span>
-                                    </div>
-                                    <div class="m-order">
-                                        <img src="images/flower-green.png"> 2Years Premium Vendor
-                                    </div>
-                                    <div class="star-bar">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </div>
-                                    <div class="stock-item">
-                                       <i class="fa fa-long-arrow-right" aria-hidden="true"></i><span> Go to Store</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 border-gray-left-right">
-                            <div>
-                                <div class="star-bar padding-15"></div>
-                                <div class="product-data">
-                                    <img class="product-img" src="images/company-2.png">
-                                    <div class="product-title top-bottom-space"></div>
-                                    <div class="detail-data">
-                                        <span class="product-price top-bottom-space">Company Name</span>
-                                    </div>
-                                    <div class="m-order">
-                                        <img src="images/flower-green.png"> 2Years Premium Vendor
-                                    </div>
-                                    <div class="star-bar">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </div>
-                                    <div class="stock-item">
-                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i><span> Go to Store</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div>
-                                <div class="star-bar padding-15"></div>
-                                <div class="product-data">
-                                    <img class="product-img" src="images/company-3.png">
-                                    <div class="product-title top-bottom-space"></div>
-                                    <div class="detail-data">
-                                        <span class="product-price top-bottom-space">Company Name</span>
-                                    </div>
-                                    <div class="m-order">
-                                        <img src="images/flower-green.png"> 2Years Premium Vendor
-                                    </div>
-                                    <div class="star-bar">
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                    </div>
-                                    <div class="stock-item">
-                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i><span> Go to Store</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 top-bottom-space">
-                <div class="border-gray padding-left-right top-bottom-space" style="text-align: center;">
-                    <div class="deals-bar">
-                        <span class="pull-left sub-menu-italic">Latest Vendors</span>
-                        <div class="pull-right show-more">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                     <div class="top-bottom-space vendors">
-                        <div class="vendor"><img src="images/vendor1.png"></div>
-                        <div class="vendor"><img src="images/vendor2.png"></div>
-                        <div class="vendor"><img src="images/vendor3.png"></div>
-                        <div class="vendor"><img src="images/vendor4.png"></div>
-                        <div class="vendor"><img src="images/vendor5.png"></div>
-                    </div>
-                     <div class="top-bottom-space vendors">
-                        <div class="vendor"><img src="images/vendor6.png"></div>
-                        <div class="vendor"><img src="images/vendor7.png"></div>
-                        <div class="vendor"><img src="images/vendor8.png"></div>
-                        <div class="vendor"><img src="images/vendor9.png"></div>
-                        <div class="vendor"><img src="images/vendor10.png"></div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="recently-added-products">
-        <div class="row padding-left-right title-bar">
-            <span class="pull-left"><img src="images/our-service.png"> Our Service</span>
-        </div>
-        <div class="row padding-left-right">
-            <div class="col-sm-12">
-                <div class="border-bottom-blue-2"></div>
-            </div>            
-        </div>
-        <div class="top-bottom-space"></div>
-        <div class="row top-bottom-space padding-left-right">
-            <div class="col-sm-6 col-md-3 col-lg-3 top-bottom-space">
-                <div class="border-gray service">
-                    <div class="service-img">
-                        <img src="images/service-1.png" width="45" height="43">
-                    </div>
-                    <div class="service-content">
-                        <h5>Inspection Service</h5>
-                        <p>Lorem ipsum dolor sit amet conc</p>
-                        <p>Lorem ipsum dolor sit amet adip</p>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>Lorem ipsum dolor sit amet ad</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 top-bottom-space">
-                <div class="border-gray service">
-                    <div class="service-img">
-                        <img src="images/service-2.png" width="45" height="43">
-                    </div>
-                    <div class="service-content">
-                        <h5>Inspection Service</h5>
-                        <p>Lorem ipsum dolor sit amet conc</p>
-                        <p>Lorem ipsum dolor sit amet adip</p>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>Lorem ipsum dolor sit amet ad</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 top-bottom-space">
-                <div class="border-gray service">
-                    <div class="service-img">
-                        <img src="images/service-3.png" width="45" height="43">
-                    </div>
-                    <div class="service-content">
-                        <h5>Inspection Service</h5>
-                        <p>Lorem ipsum dolor sit amet conc</p>
-                        <p>Lorem ipsum dolor sit amet adip</p>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>Lorem ipsum dolor sit amet ad</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3 top-bottom-space">
-                <div class="border-gray service">
-                    <div class="service-img">
-                        <img src="images/service-4.png" width="45" height="43">
-                    </div>
-                    <div class="service-content">
-                        <h5>Inspection Service</h5>
-                        <p>Lorem ipsum dolor sit amet conc</p>
-                        <p>Lorem ipsum dolor sit amet adip</p>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>Lorem ipsum dolor sit amet ad</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="deals">
-        <div class="row top-bottom-space"></div>
-        <div class="row padding-left-right ">
-            <div class="col-sm-12 col-md-6 col-lg-6 top-bottom-space">
-                <div class="border-blue padding-left-right top-bottom-space">
-                    <div class="deals-bar">
-                        <span class="pull-left"><img src="images/currency-converter.png" width="25" height="23">&nbsp;&nbsp;Currency Converter</span>
-                    </div>
-                     <div class="row top-bottom-space padding-left-right currency-converter">
-                        <div class="col-sm-12 converter">
-                            <div>
-                                <input  type="input" value="">
-                                <button class="btn btn-success">$&nbsp;&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                            </div>
-                            <div><img src="images/change.png" width="30" height="30"></div>
-                            <div>
-                                <input  type="input" value="">
-                                <button class="btn btn-warning">$&nbsp;&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 eur">478.403 EUR</div>
-                        <div class="col-sm-12 calc-eur">1 USD = 0.956805 EUR : 1 EUR = 1.04515 USD</div>
-                        <div class="col-sm-12 market-rate">Live mid-maket rate 2016-12-26 15:26 local time</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 top-bottom-space">
-                <div class="border-blue padding-left-right top-bottom-space">
-                    <div class="deals-bar">
-                        <span class="pull-left"><img src="images/buying-leads.png" width="25" height="23">&nbsp;&nbsp; Busying Leads</span>
-                        
-                        <div class="pull-right show-more">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                     <div class="row top-bottom-space padding-left-right">
-                        <div class="col-sm-12 buying-leads">
-                            <ul>
-                                <li>
-                                    <span class="pull-left"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetuer adipiscing elit</span>
-                                    <span class="pull-right">26 Dec 2016</span>
-                                </li>
-                                <li>
-                                    <span class="pull-left"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetuer adipiscing elit</span>
-                                    <span class="pull-right">26 Dec 2016</span>
-                                </li>
-                                <li>
-                                    <span class="pull-left"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetuer adipiscing elit</span>
-                                    <span class="pull-right">26 Dec 2016</span>
-                                </li>
-                                <li>
-                                    <span class="pull-left"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetuer adipiscing elit</span>
-                                    <span class="pull-right">26 Dec 2016</span>
-                                </li>
-                                <li>
-                                    <span class="pull-left"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetuer adipiscing elit</span>
-                                    <span class="pull-right">26 Dec 2016</span>
-                                </li>
-                                <li>
-                                    <span class="pull-left"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetuer adipiscing elit</span>
-                                    <span class="pull-right">26 Dec 2016</span>
-                                </li>
+	<!--Currency and buying leads-->
+	<div class="row currency__buiyngleads ">
+		<div class="col-md-6 col-sm-12 col-lg-6 col-xs-12 currency_leads_col">
+			<div class="currency_leads">
+			<div class="currency_leads_heading">
+				<img src="assets/img/currency_logo.png">
+				<span>Currency Converter</span>
+			</div>
+			<div class="currency_leads_main">
+				<div class="currency_leads_box_grp">
+				<div class="currency_leads_box ">
+					<input class="currency_leads_box_input " type="text" name="">
+					<select class="currency_leads_box_select ">
+						<option>$</option>
+						<option>₤</option>
+						<option>₹</option>
+						<option>£</option>
+					</select>
+				</div>
+				<div class="currency_leads_button">
+					<a href="#">
+						<img src="assets/img/currency_buton.png">
+					</a>
+				</div>
+				<div class="currency_leads_box box_orange">
+					<input type="text" class="currency_leads_box_input  " name="">
+					<select class="currency_leads_box_select ">
+						<option>$</option>
+						<option>₤</option>
+						<option>₹</option>
+						<option>£</option>
+					</select>
+				</div>
+				</div>
+				<div class="currency_leads_total">
+					478.403 EUR
+				</div>
+				<div class="currency_leads_rate">
+					1 USD = 0.956805 EUR  :  1 EUR = 1.04515 USD
+				</div>
+				<div class="currency_leads_market">
+					Live mid-market rate 2016-12-26 15:26 local time
+				</div>
 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row we_accept">
-            <div class="col-sm-12">we accept</div>
-    </div>
-    <div class="row pay_com" align="center">
-            <img  src="images/visa.png">
-            <img  src="images/mastercard.png">
-            <img  src="images/american_express_cards.png">
-            <img  src="images/paypal.png">
-            <img  src="images/discover.png">
-    </div>
-</div>
-<footer class="backcolor-blue footer">
-        <div class="container">
-            <div class="col-sm-12 subscrible">
-                Subscribe
-            </div>
-            <div class="col-sm-12 sub_title">
-                Subscrible now and get all the updates about latest products,<br>new offers and deal in your emal.
-            </div>
-            <div class="col-sm-12 submit">
-                <form class="form-inline submit_form">
-                  <div class="form-group">
-                    <input type="email" class="form-control submit_input" id="email">
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-md">Submit</button>
-                </form>
-            </div>
-            <div class="about_site">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-4 information">
-                            <div  class="row topic">
-                                <img width="20px" src="images/information.png">
-                                <span>Information</span>
-                            </div>
-                            <div class="row list">
-                                <a>Blog</a><br>
-                                <a>Plans</a><br>
-                                <a>About Dubailist</a><br>
-                                <a>Refund Policy</a><br>
-                                <a>Privacy Policy</a><br>
-                                <a>Terms of Agreement</a><br>
-                                <a>Contact Us</a><br>
-                                <a>Shipping</a><br>
-                                <a>Create a buy request</a>
+				
+			</div>
+		</div>
+		</div>
+		<div class="col-md-6 col-sm-12 col-lg-6 col-xs-12 buying_leads_col">
+		<div class="buying_leads">
+			<div class="buying_leads_heading">
+				<img src="assets/img/buying_leads.png">
+				<span>Currency Converter</span>
+				<i class="fa fa-angle-right" aria-hidden="true"></i>
+			</div>
+			<div class="buying_leads_main">
+				<div class="buying_leads_individual">
+					<i class="fa fa-long-arrow-right buying_leads_individual_i" aria-hidden="true"></i>
+					<span class="buying_leads_individual_span1">Lorem ipsum dolor sit amet consectetuer adipiscing elit</span>
+					<span class="buying_leads_individual_span2">26 Dec 2016</span>
+				</div>
+				<div class="buying_leads_individual">
+					<i class="fa fa-long-arrow-right buying_leads_individual_i" aria-hidden="true"></i>
+					<span class="buying_leads_individual_span1">Lorem ipsum dolor sit amet consectetuer adipiscing elit</span>
+					<span class="buying_leads_individual_span2">26 Dec 2016</span>
+				</div>
+				<div class="buying_leads_individual">
+					<i class="fa fa-long-arrow-right buying_leads_individual_i" aria-hidden="true"></i>
+					<span class="buying_leads_individual_span1">Lorem ipsum dolor sit amet consectetuer adipiscing elit</span>
+					<span class="buying_leads_individual_span2">26 Dec 2016</span>
+				</div>
+				<div class="buying_leads_individual">
+					<i class="fa fa-long-arrow-right buying_leads_individual_i" aria-hidden="true"></i>
+					<span class="buying_leads_individual_span1">Lorem ipsum dolor sit amet consectetuer adipiscing elit</span>
+					<span class="buying_leads_individual_span2">26 Dec 2016</span>
+				</div>
+				<div class="buying_leads_individual">
+					<i class="fa fa-long-arrow-right buying_leads_individual_i" aria-hidden="true"></i>
+					<span class="buying_leads_individual_span1">Lorem ipsum dolor sit amet consectetuer adipiscing elit</span>
+					<span class="buying_leads_individual_span2">26 Dec 2016</span>
+				</div>
+				<div class="buying_leads_individual">
+					<i class="fa fa-long-arrow-right buying_leads_individual_i" aria-hidden="true"></i>
+					<span class="buying_leads_individual_span1">Lorem ipsum dolor sit amet consectetuer adipiscing elit</span>
+					<span class="buying_leads_individual_span2">26 Dec 2016</span>
+				</div>
 
-                            </div>
-                        </div>
-                        <div class="col-sm-4 footer_categories">
-                            <div class="row topic">
-                                <img width="20px" src="images/footer_categories.png">
-                                <span>Categories</span>
-                            </div>
-                            <div class="row list">
-                                <a>Autos & Auto Parts</a><br>
-                                <a>Industrial & Construction</a><br>
-                                <a>Electronics</a><br>
-                                <a>Mobile Phones & Tablets</a><br>
-                                <a>Food, Processing & Production</a><br>
-                                <a>Packaging & Advertising</a><br>
-                                <a>Home & Office Furniture</a><br>
-                                <a>Laptops & Computers</a><br>
-                                <a>Lights & Lighting</a><br>
-                                <span class="glyphicon glyphicon-option-horizontal"></span>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 our_services">
-                            <div class="row topic">
-                                <img width="20px" src="images/our_services.png">
-                                <span>Our Services</span>
-                            </div>
-                            <div class="row list">
-                                <a>Verified Supplier</a><br>
-                                <a>Dubailist Transaction Assurance</a><br>
-                                <a>Dubailist Secure Payment</a><br>
-                                <a>Global Bussiness Translator</a>
-                            </div>
-                            <div class="row reserved">
-                                <span>@&nbsp;2017 Dubailist.All rights reserved</span>
-                            </div>
-                            <div class="line_up"></div>
-                            <div class="line_down"></div>
-                            <div class="row reserved_icon">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                                <i class="fa fa-youtube" aria-hidden="true"></i>
-                                <i class="fa fa-camera-retro" aria-hidden="true"></i>                        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
+			</div>
+			
+			
+		</div>
+		</div>
+	</div>
+	<div class="row">
+	<div class="accept_card">
+		<div class="accept_card_heading">We accept</div>
+		<div class="accept_card_data">
+			<a href="#">
+				<img src="assets/img/visa.jpg">
+			</a>
+			<a href="#">
+				<img src="assets/img/master.jpg">
+			</a>
+			<a href="#">
+				<img src="assets/img/amer.jpg">
+			</a>
+			<a href="#">
+				<img src="assets/img/pay.jpg">
+			</a>
+			<a href="#">
+				<img src="assets/img/dis.jpg">
+			</a>
+		</div>
+	</div>
+	</div>
+	</div>
+</content>
+
+<footer>
+	<div class="container">
+		<div class="subscribe_area ">
+			<div class="subscribe_area_heading">Subscribe</div>
+			<div class="subscribe_area_text">
+				Subscrible now and get all the updates about latest products,<br>
+new offers and deal in your emal.
+			</div>
+			<div class="input-group subscribe_area_group col-sm-6 col-md-4 col-xs-12 col-md-offset-4">
+				<input  class="form-control subscribe_area_input" type="text" name="">
+				<button class="form-control subscribe_area_button">Submit</button>
+			</div>
+		</div>
+		<div class="footer_data">
+			<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 footer_data_col">
+				<div class="footer_data_heading">
+					<img src="assets/img/info_footer.png">
+					<span>Information</span>
+				</div>
+				<div class="footer_data_list">
+					<span>Blog</span>
+					<span>Plans</span>
+					<span>About Dubailist</span>
+					<span>Refund Policy</span>
+					<span>Privacy Policy</span>
+					<span>Terms of Agreement</span>
+					<span>Contact Us</span>
+					<span>Shipping</span>
+					<span>Create a buy request</span>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 footer_data_col">
+				<div class="footer_data_heading">
+					<img src="assets/img/cat_footer.png">
+					<span>Categories</span>
+				</div>
+				<div class="footer_data_list">
+					<span>Autos & Auto Parts</span>
+					<span>Industrial & Construction</span>
+					<span>Electronics</span>
+					<span>Mobile Phones & Tablets</span>
+					<span>Food, Processing & Production</span>
+					<span>Packaging & Advertising</span>
+					<span>Home & Office Furniture</span>
+					<span>Laptops & Computers</span>
+					<span>Lights & Lighting</span>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 footer_data_col">
+				<div class="footer_data_heading">
+					<img src="assets/img/con_footer.png">
+					<span>Our Services</span>
+				</div>
+				<div class="footer_data_list">
+					<span>Verified Supplier</span>
+					<span>Dubailist Transaction Assurance</span>
+					<span>Dubailist Secure Payment</span>
+					<span>Global Business Translator</span>
+					
+				</div>
+				<div class="footer_copy_social">
+					<div class="foooter_copy"><i class="fa fa-copyright" aria-hidden="true"></i> 2016 Dubailist. All rights reserved </div>
+				
+				<div class="footer_social">
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
 </footer>
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
 </body>
-<script src="plugins/flexslider/jquery.flexslider-min.js"></script> 
-<script src="plugins/flexslider/flexslider.config.js"></script>
+
+
 </html>
